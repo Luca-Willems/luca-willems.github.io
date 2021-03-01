@@ -1,0 +1,45 @@
+html,
+body {
+    height: 100%;
+    background: #000;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 140px;
+    margin: 0 auto
+}
+
+h1 {
+    font-weight: 700;
+    margin-top: 10;
+}
+
+.cr {
+    font-size: .6em;
+    color: #555;
+    margin: 10px auto;
+    text-align: center;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
+}
