@@ -260,7 +260,7 @@ function checkHighscore() {
 
 //berekent de snelheid van het obstacle aan de hand van de score, @param score = de score
 function calcSpeed(score) {
-    if (score != 0 && score % 100 == 0 && obstacleDelay != 1) {
+    if (score != 0 && score % 10 == 0 && obstacleDelay != 1) {
         obstacleDelay--
     }
 }
