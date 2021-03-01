@@ -102,6 +102,13 @@ function calcJump() {
         if (jumpingTime == 13) { //als hij de grond raakt is hij niet meer aan het springen
             isJumping = false
         }
+        else if (obstacleDelay == 1 && jumpingTime >= 4 && jumpingTime <= 7) { } //hier blijft hij hangen in de lucht
+        else if (obstacleDelay == 1 && jumpingTime <= 10) { //hij gaat naar beneden
+            r++
+        }
+        if (obstacleDelay == 1 && jumpingTime == 10) { //als hij de grond raakt is hij niet meer aan het springen
+            isJumping = false
+        }
     }
 }
 
