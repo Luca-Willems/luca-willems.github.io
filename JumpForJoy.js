@@ -102,17 +102,12 @@ function calcJump() {
         if (jumpingTime == 13) { //als hij de grond raakt is hij niet meer aan het springen
             isJumping = false
         }
-        if (obstacleDelay == 2) {
-            if (jumpingTime <= 3) { //het mannetje springt omhoog
-                r--
-            }
-            else if (jumpingTime >= 4 && jumpingTime <= 7) { } //hier blijft hij hangen in de lucht
-            else if (jumpingTime <= 10) { //hij gaat naar beneden
-                r++
-            }
-            if (jumpingTime == 10) { //als hij de grond raakt is hij niet meer aan het springen
-                isJumping = false
-            }
+        if (obstacleDelay == 2 && jumpingTime >= 4 && jumpingTime <= 7) { } //hier blijft hij hangen in de lucht
+        if (obstacleDelay == 2 && jumpingTime <= 10) { //hij gaat naar beneden
+            r++
+        }
+        if (obstacleDelay == 2 && jumpingTime == 10) { //als hij de grond raakt is hij niet meer aan het springen
+            isJumping = false
         }
     }
 }
